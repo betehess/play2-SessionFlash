@@ -1,0 +1,6 @@
+GET     /connect/:user          controllers.JavaApi.connect(user)
+GET     /connected              controllers.JavaApi.connected()
+GET     /disconnect             controllers.JavaApi.disconnect()
+
+GET     /getFlash/:key             controllers.JavaApi.getFlash(key)
+GET     /setFlash/:key/:value      controllers.JavaApi.setFlash(key, value)
