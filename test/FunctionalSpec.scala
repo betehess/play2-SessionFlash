@@ -4,12 +4,13 @@ import play.api.test._
 import play.api.test.Helpers._
 import org.specs2.mutable._
 
-// remark: you can't activate both at once...  I don't really know how
-// to test applications with different application.context because the
-// first to be executed gets to initialize the corresponding objects
+// remark: you can't run both at once, you need to choose...  I don't
+// really know how to test applications with different
+// application.context because the first to be executed gets to
+// initialize the corresponding objects
 
 // this one is ok, but that's unlucky :-)
-// class SlashContext extends FunctionalSpec("/")
+class SlashContext extends FunctionalSpec("/")
 
 // with an application.context different from /, the corresponding
 // cookies don't get deleted
